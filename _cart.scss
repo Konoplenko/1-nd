@@ -1,0 +1,185 @@
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.header-cart{
+    padding: 0 calc(50% - 600px);
+    height: 400px;
+    background-image: url(img/cart.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.name-cart{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 128px;
+    color: rgb(255, 255, 255);
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding: 0 calc(50% - 600px);
+    margin-top: 64px;
+    
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        width: 756px;
+    }
+
+    &__item {
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        width: 276px;
+    }
+
+    &__pr{
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 16px;
+        margin-bottom: 15px;
+    }
+
+    &__link-box{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__link{
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+        font-family: inherit;
+    }
+
+    &__inp{
+        border: 1px solid rgb(247, 246, 246);
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        width: 71px;
+        height: 51px;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 20px;
+        box-sizing: border-box;
+        font-family: inherit;
+    }
+
+    &__button{
+        padding-top: 18px;
+    }
+
+    &__but{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        font-family: inherit;
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        width: 200px;
+        height: 37px;
+        margin-right: 7px;
+        background: white;
+        cursor: pointer;
+    }
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        width: 379px;
+        height: 556px;
+        grid-column: span 4;
+    }
+
+    &__form_title{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 42px;
+        margin-bottom: 35px;
+    }
+
+    &__forminp {
+        height: 143px;
+        margin-left: 27px;
+        margin-right: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    &__forminp-inp {
+        border: 1px solid rgb(247, 246, 246);
+        border-bottom: 1px solid rgb(202, 205, 216);
+        width: 288px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        font-family: inherit;
+    }
+
+    &__form_pr{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: center;
+        margin-top: 64px;
+    }
+
+    &__form_button{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 18px;
+    }
+
+    &__form_but{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        font-family: inherit;
+        color: rgb(2, 2, 2);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        width: 290px;
+        height: 41px;
+        margin-right: 7px;
+        background: transparent; 
+        cursor: pointer; 
+    }
+}
